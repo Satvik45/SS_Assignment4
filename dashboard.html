@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <h3>Company Metrics</h3>
+    <div class="card-container">
+        <div class="card-row">
+            <div class="card">
+                <p id="green">$406,411.29</p>
+                <p>Total Revenue</p>
+            </div>
+            <div class="card">
+                <p id="number">$620</p>
+                <p>Total Jobs Avg</p>
+            </div>
+            <div class="card">
+                <p id="number">655</p>
+                <p>Tickets Created</p>
+            </div>
+            <div class="card">
+                <p id="number">735</p>
+                <p>Tickets Scheduled</p>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card">
+                <p id="red">$110,448.8</p>
+                <p>Outstanding Amount</p>
+            </div>
+            <div class="card">
+                <p id="number">105</p>
+                <p>Memberships Sold</p>
+            </div>
+            <div class="card">
+                <p id="number">436</p>
+                <p>Jobs Completed</p>
+            </div>
+            <div class="card">
+                <p id="number">65</p>
+                <p>Total Canceled</p>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div class="chart-container">
+        <div class="chart-wrapper">
+            <div class="chart-heading" style="text-align: center;"><b>Revenue By Job Location</b></div>
+            <canvas id="myChart1"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <div class="chart-heading" style="text-align: center;"><b>Revenue By Job Type</b></div>
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+    <script defer src="dashboard.js"></script>
+</body>
+
+</html>
